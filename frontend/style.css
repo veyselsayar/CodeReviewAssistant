@@ -1,0 +1,101 @@
+/* Genel sayfa ayarları */
+body {
+    background: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Başlık */
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Textarea */
+textarea#codeInput {
+    width: 100%;
+    min-height: 220px;
+    padding: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+textarea#codeInput:focus {
+    border-color: #0078d4;
+    outline: none;
+}
+
+/* Buton */
+button#analyzeBtn {
+    margin-top: 15px;
+    display: block;
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button#analyzeBtn:hover {
+    background-color: #005a9e;
+}
+
+/* Sonuç kutusu */
+.result-box {
+    margin-top: 25px;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 20px;
+    border-radius: 6px;
+    min-height: 180px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+/* Başlık */
+h2 {
+    margin-top: 40px;
+    text-align: center;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    button#analyzeBtn {
+        max-width: 100%;
+    }
+}
